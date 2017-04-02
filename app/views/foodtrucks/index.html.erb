@@ -1,0 +1,9 @@
+<h1>Foodtrucks in SF</h1>
+
+
+<% @foodtrucks.each do |foodtruck| %>
+  <h2><%= foodtruck["applicant"] %></h2>
+  <h3><%= foodtruck["optionaltext"] %></h3>
+  <h4><%= foodtruck["locationdesc"] %></h4>
+  <h4>Days: <%= foodtruck["dayofweekstr"] %></h4>
+<% end %>
